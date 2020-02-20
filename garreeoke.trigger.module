@@ -1,8 +1,8 @@
 {
-    "branch": {{ var "branch" ?: "master" }},
+    "branch": "{{ var "branch" ?: "master" }}",
     "enabled": true,
     "project": "garreeoke",
-    "slug": {{ var "slug" }},
+    "slug": "{{ var "slug" }}",
     "source": "github",
     "type": "git"
 }
