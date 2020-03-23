@@ -5,8 +5,8 @@
 	"moniker": {
 				"app": "{{ var "app" }}"
 	},
-	"name": "{{ var "stageName" }}",,
-	"refId": "{{ var "stageOrder" }}",,
+	"name": "{{ var "stageName" }}",
+	"refId": "{{ var "stageOrder" }}",
 	"requisiteStageRefIds": [],
 	"skipExpressionEvaluation": false,
 	"source": "artifact",
