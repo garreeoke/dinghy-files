@@ -1,0 +1,21 @@
+{
+	"account": "{{ var "k8sProviderName" }}",
+	"cloudProvider": "kubernetes",
+	"manifestArtifact": "{{ module "github.k8s.manifestart.module" "branch" "master" }}",
+	"moniker": {
+				"app": "acmeair"
+	},
+	"name": "{{ var "stageName" }}",,
+	"refId": "{{ var "stageOrder" }}",,
+	"requisiteStageRefIds": [],
+	"skipExpressionEvaluation": false,
+	"source": "artifact",
+	"trafficManagement": {
+		"enabled": false,
+		"options": {
+			"enableTraffic": false,
+			"services": []
+		}
+	},
+	"type": "deployManifest"
+}

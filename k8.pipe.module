@@ -1,0 +1,95 @@
+{
+  "application": "acmeair",
+  "name": "acmeweb1",
+  "expectedArtifacts": [],
+  "keepWaitingPipelines": false,
+  "lastModifiedBy": "admin",
+  "limitConcurrent": true,
+  "stages": [
+    {
+      "account": "kubeconfig-dev-sa",
+      "cloudProvider": "kubernetes",
+      "manifestArtifact": {
+        "artifactAccount": "garreeoke",
+        "name": "acmeair/acme-air-full.yml",
+        "reference": "https://api.github.com/repos/garreeoke/spin-apps/contents/acmeair/acme-air-full.yml",
+        "type": "github/file"
+      },
+      "moniker": {
+        "app": "acmeair"
+      },
+      "name": "Deploy_NS",
+      "namespaceOverride": "",
+      "refId": "1",
+      "requiredArtifactIds": [],
+      "requiredArtifacts": [],
+      "requisiteStageRefIds": [],
+      "skipExpressionEvaluation": false,
+      "source": "artifact",
+      "trafficManagement": {
+        "enabled": false,
+        "options": {
+          "enableTraffic": false,
+          "services": []
+        }
+      },
+      "type": "deployManifest"
+    },
+    {
+      "failPipeline": true,
+      "instructions": "What do you want to do with the deployment?",
+      "judgmentInputs": [
+        {
+          "value": "Update"
+        },
+        {
+          "value": "Delete"
+        },
+        {
+          "value": "Leave it"
+        }
+      ],
+      "name": "NextMove",
+      "notifications": [],
+      "refId": "2",
+      "requisiteStageRefIds": [
+        "1"
+      ],
+      "type": "manualJudgment"
+    },
+    {
+      "account": "kubeconfig-dev-sa",
+      "app": "acmeair",
+      "cloudProvider": "kubernetes",
+      "failOnFailedExpressions": true,
+      "location": "default",
+      "manifestName": "namespace acme-air-${trigger['tag']}",
+      "mode": "static",
+      "name": "Delete_NS",
+      "options": {
+        "cascading": true
+      },
+      "refId": "3",
+      "requisiteStageRefIds": [
+        "2"
+      ],
+      "stageEnabled": {
+        "expression": "${ #judgment(\"NextMove\").equals(\"Delete\")}",
+        "type": "expression"
+      },
+      "type": "deleteManifest"
+    }
+  ],
+  "triggers": [
+    {
+      "account": "garreeoke-docker",
+      "enabled": true,
+      "expectedArtifactIds": [],
+      "organization": "garreeoke",
+      "registry": "index.docker.io",
+      "repository": "garreeoke/acmenode",
+      "tag": "pr.*",
+      "type": "docker"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "defaultArtifact": {},
+  "displayName": "{{ var "artifactPath" }}",
+  "matchArtifact": {
+    "artifactAccount": "{{ var "githubAccount" }}",
+    "customKind": true,
+    "name": "{{ var "artifactPath" }}",
+    "type": "github/file"
+  },
+  "useDefaultArtifact": false,
+  "usePriorArtifact": false
+}

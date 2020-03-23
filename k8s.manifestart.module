@@ -1,0 +1,9 @@
+{
+	"manifestArtifact": {
+		"artifactAccount": "{{ var "githubAccount" }}",
+		"name": "{{ var "artifactPath" }}",
+		"reference": "{{ var "artifactPath" }}",
+		"type": "github/file",
+		"version": " {{ var "branch" }} "
+	}
+}

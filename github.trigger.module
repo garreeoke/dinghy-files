@@ -1,7 +1,9 @@
 {
     "branch": "{{ var "branch" ?: "master" }}",
     "enabled": true,
-    "project": "garreeoke",
+    "expectedArtifactsIds": [],
+    "project": "{{ var "project" }}",
+    "secret": "{{ var "secret" }}",
     "slug": "{{ var "slug" }}",
     "source": "github",
     "type": "git"
