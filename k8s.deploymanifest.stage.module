@@ -3,7 +3,7 @@
 	"cloudProvider": "kubernetes",
 	"manifestArtifact": "{{ module "github.k8s.manifestart.module" "branch" "master" }}",
 	"moniker": {
-				"app": "acmeair"
+				"app": "{{ var "app" }}"
 	},
 	"name": "{{ var "stageName" }}",,
 	"refId": "{{ var "stageOrder" }}",,
