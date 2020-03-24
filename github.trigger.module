@@ -1,7 +1,7 @@
 {
     "branch": "{{ var "branch" ?: "master" }}",
     "enabled": true,
-    "expectedArtifactsIds": [ 
+    "expectedArtifactIds": [ 
     	"{{ var "expectedArtifactId" }}"
     ],
     "project": "{{ var "project" }}",
