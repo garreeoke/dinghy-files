@@ -1,6 +1,7 @@
 {
 	"account": "{{ var "k8sProviderName" }}",
 	"cloudProvider": "kubernetes",
+	"manifestArtifact": null,
 	"manifestArtifactId": "{{ var "expectedArtifactId" }}",
 	"moniker": {
 				"app": "{{ var "app" }}"
