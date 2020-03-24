@@ -4,6 +4,6 @@
 		"name": "{{ var "artifactPath" }}",
 		"reference": "{{ var "artifactPath" }}",
 		"type": "github/file",
-		"version": " {{ var "branch" }} "
+		"version": "{{ var "branch" }}"
 	}
 }
