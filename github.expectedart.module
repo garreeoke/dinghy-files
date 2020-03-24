@@ -1,7 +1,7 @@
 {
   "defaultArtifact": {},
   "displayName": "{{ var "artifactPath" }}",
-  "id": {{ var "expectedArtifactId" }},
+  "id": "{{ var "expectedArtifactId" }}",
   "matchArtifact": {
     "artifactAccount": "{{ var "githubAccount" }}",
     "customKind": true,
