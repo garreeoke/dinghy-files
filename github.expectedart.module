@@ -1,6 +1,6 @@
 {
   "defaultArtifact": {},
-  "displayName": "{{ var "artifactPath" }}",
+  "displayName": "{{ var "displayName" }}",
   "id": "{{ var "expectedArtifactId" }}",
   "matchArtifact": {
     "artifactAccount": "{{ var "githubAccount" }}",
