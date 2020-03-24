@@ -1,7 +1,7 @@
 {
 	"account": "{{ var "k8sProviderName" }}",
 	"cloudProvider": "kubernetes",
-	"manifestArtifact": {{ module "k8s.manifestart.module" "artifactPath" "spin-apps/acmeair/acme-air-dep.yml" "githubAccount" "garreeoke" "branch" "master"}},
+	"manifestArtifact": {{ module "k8s.manifestart.module" "artifactPath" "spin-apps/acmeair/acme-air-dep.yml" "githubAccount" "garreeoke" "branch" "master" }},
 	"moniker": {
 				"app": "{{ var "app" }}"
 	},
