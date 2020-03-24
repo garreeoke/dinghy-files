@@ -1,7 +1,7 @@
 {
 	"account": "{{ var "k8sProviderName" }}",
 	"cloudProvider": "kubernetes",
-	"manifestArtifact": "{{ module "github.k8s.manifestart.module" "branch" "master" }}",
+	"manifestArtifact": "{{ module "k8s.manifestart.module" "branch" "master" }}",
 	"moniker": {
 				"app": "{{ var "app" }}"
 	},
