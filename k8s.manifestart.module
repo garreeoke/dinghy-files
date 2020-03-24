@@ -1,5 +1,5 @@
 {
-	"manifestArtifact": {
+	"manifestArtifactblah": {
 		"artifactAccount": "{{ var "githubAccount" }}",
 		"name": "{{ var "artifactPath" }}",
 		"reference": "{{ var "artifactPath" }}",
