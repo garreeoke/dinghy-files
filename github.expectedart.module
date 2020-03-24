@@ -5,7 +5,7 @@
   "matchArtifact": {
     "artifactAccount": "{{ var "githubAccount" }}",
     "customKind": true,
-    "name": "{{ var "displayName" }}",
+    "name": "{{ var "artifactPath" }}",
     "type": "github/file"
   },
   "useDefaultArtifact": false,
