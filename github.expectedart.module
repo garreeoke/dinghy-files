@@ -1,5 +1,11 @@
 {
-  "defaultArtifact": {},
+  "defaultArtifact": {
+    "artifactAccount": "{{ var "githubAccount" }}",
+    "name": "{{ var "artifactPath" }}",
+    "reference": "{{ var "reference" }}",
+    "type": "github/file",
+    "version": "master"
+  },
   "displayName": "{{ var "displayName" }}",
   "id": "{{ var "expectedArtifactId" }}",
   "matchArtifact": {
@@ -9,5 +15,5 @@
     "type": "github/file"
   },
   "useDefaultArtifact": false,
-  "usePriorArtifact": false
+  "usePriorArtifact": true
 }
