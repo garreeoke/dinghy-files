@@ -1,0 +1,10 @@
+{
+  "account": "{{ var "dockerProviderName" }}",
+  "enabled": true,
+  "expectedArtifactIds": [],
+  "organization": "{{ var "dockerOrg" }}",
+  "registry": "{{ var "dockerRegistry" }}",
+  "repository": "{{ var "repoName" }}",
+  "tag": "{{ var "dockerTag" }}",
+  "type": "docker"
+}
