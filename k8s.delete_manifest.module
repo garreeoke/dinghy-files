@@ -10,7 +10,7 @@
   "options": {
     "cascading": true
   },
-  "refId": "{{ var "stageOrder" }},
+  "refId": "{{ var "stageOrder" }}",
   "requisiteStageRefIds": [
     "{{ var "previousStage" }}"
   ],
