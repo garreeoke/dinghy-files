@@ -1,0 +1,16 @@
+{
+      "failPipeline": true,
+      "instructions": "{{ var "instruction" }}",
+      "judgmentInputs": [
+        {
+          "value": "{{ var "judgementInput" }}"
+        }
+      ],
+      "name": "{{ var "stageName" }}",
+      "notifications": [],
+      "refId": "{{ var "stageOrder" }}",
+      "requisiteStageRefIds": [
+        {{ var "previousStage"}}
+      ],
+      "type": "manualJudgment"
+    }

@@ -1,0 +1,22 @@
+{
+  "account": "{{ var "k8sProviderName" }}",
+  "app": "{{ var "app" }}",
+  "cloudProvider": "kubernetes",
+  "failOnFailedExpressions": true,
+  "location": "default",
+  "manifestName": "{{ var "objectType" }} {{ var "objectName" }}",
+  "mode": "static",
+  "name": "{{ var "stageName" }}",
+  "options": {
+    "cascading": true
+  },
+  "refId": "{{ var "stageOrder" }},
+  "requisiteStageRefIds": [
+    {{ var "previousStage" }}
+  ],
+  "stageEnabled": {
+    "expression": "${ #judgment(\"Hold for Testing\").equals(\"Done\")}",
+    "type": "expression"
+  },
+  "type": "deleteManifest"
+}
