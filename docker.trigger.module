@@ -4,7 +4,7 @@
   "expectedArtifactIds": [],
   "organization": "{{ var "dockerOrg" }}",
   "registry": "{{ var "dockerRegistry" }}",
-  "repository": "{{ var "repoName" }}",
+  "repository": "{{ var "image" }}",
   "tag": "{{ var "dockerTag" }}",
   "type": "docker"
 }
