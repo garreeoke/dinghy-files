@@ -1,5 +1,5 @@
 {
-	"default": "{{ var "paramDefaultValue" }},
+	"default": "{{ var "paramDefaultValue" }}",
 	"description": "",
 	"hasOptions": false,
 	"label": "",
