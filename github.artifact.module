@@ -1,0 +1,10 @@
+{
+  "account": "{{ var "githubAccount" }}",
+  "artifact": {
+    "artifactAccount": "{{ var "githubAccount" }}",
+    "name": "{{ var "artifactName" }}",
+    "reference": "{{ var "artifactPath" }}",
+    "type": "github/file",
+    "version": "{{ var "branch" }}"
+  }
+}

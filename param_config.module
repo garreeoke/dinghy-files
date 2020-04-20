@@ -1,9 +1,9 @@
 {
-	"default": "",
+	"default": "{{ var "paramDefaultValue" }},
 	"description": "",
 	"hasOptions": false,
 	"label": "",
-	"name": "ticket",
+	"name": "{{ var "paramName" }}",
 	"options": [],
 	"pinned": false,
 	"required": false

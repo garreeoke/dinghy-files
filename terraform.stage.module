@@ -1,0 +1,16 @@
+{
+	"action": "{{ var "terraformAction" }}",
+	"artifacts": [
+	  {{ module "github.artifact.module" }}
+	],
+	"expectedArtifacts": [],
+	"name": "{{ var "stageName" }}",
+	"overrides": {
+		"environment_name": "{{ var "env_name" }}"
+	},
+	"profile": "",
+	"targets": [],
+	"terraformVersion": "{{ var "terraformVersion" }}",
+	"type": "terraform",
+	"workspace": "{{ var "workspace" }}"
+}
