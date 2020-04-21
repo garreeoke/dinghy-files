@@ -6,7 +6,7 @@
   "id": "{{ var "expectedArtifactId" }}",
   "matchArtifact": {
     "artifactAccount": "{{ var "artifactAccount" }}",
-    "name": "{{ var "artifactPath" }}",
+    "name": "{{ var "displayName" }}",
     "type": "{{ var "type" }}"
   },
   "useDefaultArtifact": false,
