@@ -8,9 +8,6 @@
 	],
 	"name": "{{ var "stageName" }}",
 	"refId": "{{ var "stageOrder" }}",
-	"requisiteStageRefIds": [
-	  "{{ var "previousStage" }}"
-	],
 	"overrides": {
 		"environment_name": "{{ var "env_name" }}"
 	},
