@@ -10,5 +10,5 @@
     "type": "{{ var "type" }}"
   },
   "useDefaultArtifact": false,
-  "usePriorArtifact": true
+  "usePriorArtifact": false
 }
