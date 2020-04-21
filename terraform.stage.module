@@ -7,6 +7,10 @@
        {{ module "produce_artifact.module" "displayName" "planfile" "artifactAccount" "embedded-artifact" "type" "embedded/base64" }}
 	],
 	"name": "{{ var "stageName" }}",
+	"refId": "{{ var "stageOrder" }}",
+	"requisiteStageRefIds": [
+	  "{{ var "previousStage" }}"
+	],
 	"overrides": {
 		"environment_name": "{{ var "env_name" }}"
 	},
