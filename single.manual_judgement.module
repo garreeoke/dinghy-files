@@ -15,5 +15,5 @@
         "{{ var "previousStage" }}"
       ],
       "type": "manualJudgment",
-      "sendNotifications": "{{ var "sendNotifications" ?: false }}"
+      "sendNotifications": {{ var "sendNotifications" ?: false }}
     }
