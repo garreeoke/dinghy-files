@@ -4,7 +4,7 @@
 	  {{ module "github.artifact.module" }}
 	],
 	"expectedArtifacts": [
-       {{ module "github.expectedart.module" "expectedArtifactId" "some-artifact-id" "displayName" "acmenode-deployment" }}
+       {{ module "github.expectedart.module" }}
 	],
 	"name": "{{ var "stageName" }}",
 	"overrides": {
