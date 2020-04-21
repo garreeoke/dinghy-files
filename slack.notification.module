@@ -1,0 +1,13 @@
+{
+  "address": "{{ var "slackChannel" }}",
+  "level": "stage",
+  "message": {
+    "{{ var "notificationTime" }}": {
+      "text": "{{ var "slackMessage" }}"
+     }
+  },
+  "type": "slack",
+  "when": [
+    "{{ var "notificationTime" }}"
+  ]
+}

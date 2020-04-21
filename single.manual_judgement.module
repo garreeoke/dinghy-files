@@ -7,10 +7,13 @@
         }
       ],
       "name": "{{ var "stageName" }}",
-      "notifications": [],
+      "notifications": [
+         {{ module "slack.notification.module" }}
+      ],
       "refId": "{{ var "stageOrder" }}",
       "requisiteStageRefIds": [
         "{{ var "previousStage" }}"
       ],
-      "type": "manualJudgment"
+      "type": "manualJudgment",
+      "sendNotifications": "{{ var "sendNotifications" ?: false }}"
     }
