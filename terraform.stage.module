@@ -17,6 +17,6 @@
 	"requisiteStageRefIds": [
         "{{ var "previousStage" }}"
     ],
-    "refId": "{{ var "stageOrder" }}"
+    "refId": "{{ var "stageOrder" }}",
 	"workspace": "{{ var "workspace" }}"
 }
