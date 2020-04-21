@@ -4,7 +4,7 @@
 	  {{ module "github.artifact.module" }}
 	],
 	"expectedArtifacts": [
-       {{ module "github.expectedart.module" }}
+       {{ module "produce_artifact.module" "artifactAccount" "embedded-artifact" "type" "embedded/base64" }}
 	],
 	"name": "{{ var "stageName" }}",
 	"overrides": {
