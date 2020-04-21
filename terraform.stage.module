@@ -4,7 +4,7 @@
 	  {{ module "github.artifact.module" }}
 	],
 	"expectedArtifacts": [
-       {{ module "produce_artifact.module" "displayName" "planfile" "artifactAccount" "embedded-artifact" "type" "embedded/base64" }}
+       {{ module "produce_artifact.module" }}
 	],
 	"name": "{{ var "stageName" }}",
 	"refId": "{{ var "stageOrder" }}",
