@@ -14,9 +14,9 @@
 	"targets": [],
 	"terraformVersion": "{{ var "terraformVersion" }}",
 	"type": "terraform",
-	"workspace": "{{ var "workspace" }}",
 	"requisiteStageRefIds": [
         "{{ var "previousStage" }}"
     ],
     "refId": "{{ var "stageOrder" }}"
+	"workspace": "{{ var "workspace" }}"
 }
