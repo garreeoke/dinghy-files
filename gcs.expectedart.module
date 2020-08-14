@@ -1,0 +1,15 @@
+{
+  "defaultArtifact": {
+    "customKind": true
+  },
+  "displayName": "{{ var "displayName" }}",
+  "id": "{{ var "expectedArtifactId" }},
+  "matchArtifact": {
+    "artifactAccount": "{{ var "gcsAccount" }}",
+    "customKind": true,
+    "name": "{{ var "artifactName" }}",
+    "type": "gcs/object"
+  },
+  "useDefaultArtifact": false,
+  "usePriorArtifact": false
+}
