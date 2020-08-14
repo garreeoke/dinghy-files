@@ -3,7 +3,7 @@
     "customKind": true
   },
   "displayName": "{{ var "displayName" }}",
-  "id": "{{ var "expectedArtifactId" }},
+  "id": "{{ var "expectedArtifactId" }}",
   "matchArtifact": {
     "artifactAccount": "{{ var "gcsAccount" }}",
     "customKind": true,
