@@ -4,7 +4,7 @@
     "name": "{{ var "artifactPath" }}",
     "reference": "{{ var "reference" }}",
     "type": "github/file",
-    "version": "master"
+    "version": "{{ var "version" }}"
   },
   "displayName": "{{ var "displayName" }}",
   "id": "{{ var "expectedArtifactId" }}",
