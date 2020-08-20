@@ -12,6 +12,7 @@
 	  "{{ var "previousStage" }}"
 	],
 	"failPipeline": "{{ var "fail_pipeline" }}",
+	"continuePipeline": "{{ var "continue_pipeline" }}",
 	"overrides": {
 		"environment_name": "{{ var "env_name" }}"
 	},
