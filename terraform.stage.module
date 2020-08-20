@@ -13,6 +13,7 @@
 	],
 	"failPipeline": "{{ var "fail_pipeline" }}",
 	"continuePipeline": "{{ var "continue_pipeline" }}",
+	"completeOtherBranchesThenFail": false,
 	"overrides": {
 		"environment_name": "{{ var "env_name" }}"
 	},
