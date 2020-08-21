@@ -12,7 +12,7 @@
 	  "{{ var "previousStage" }}"
 	],
 	"failPipeline": false,
-	"continuePipeline": true,
+	"continuePipeline": "{{ var "continue_pipeline" }}",
 	"completeOtherBranchesThenFail": false,
 	"overrides": {
 		"environment_name": "{{ var "env_name" }}"
