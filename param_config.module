@@ -1,6 +1,6 @@
 {
 	"default": "{{ var "paramDefaultValue" }}",
-	"description": "",
+	"description": "{{ var "paramDescription" ?: "None" }}",
 	"hasOptions": false,
 	"label": "",
 	"name": "{{ var "paramName" }}",
