@@ -11,7 +11,9 @@
 	"requisiteStageRefIds": [
 	  "{{ var "previousStage" }}"
 	],
-	"failPipe": "{{ var "fail_pipeline" }}",
+	"failPipe": false,
+	"continuePipeline": true,
+	"completeOtherBranchesThenFail": false,
 	"overrides": {
 		"environment_name": "{{ var "env_name" }}"
 	},
