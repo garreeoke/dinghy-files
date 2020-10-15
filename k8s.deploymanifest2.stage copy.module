@@ -1,0 +1,24 @@
+{
+	"account": "{{ var "k8sProviderName" }}",
+	"cloudProvider": "kubernetes",
+	"manifestArtifact": null,
+	"manifestArtifactId": "{{ var "expectedArtifactId" }}",
+	"moniker": {
+				"app": "{{ var "app" }}"
+	},
+	"name": "{{ var "stageName" }}",
+	"refId": "{{ var "stageOrder" }}",
+	"requisiteStageRefIds": [
+		"{{ var "previousStage" }}"
+	],
+	"skipExpressionEvaluation": false,
+	"source": "artifact",
+	"trafficManagement": {
+		"enabled": false,
+		"options": {
+			"enableTraffic": false,
+			"services": []
+		}
+	},
+	"type": "deployManifest"
+}
