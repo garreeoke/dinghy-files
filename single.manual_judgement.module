@@ -12,7 +12,7 @@
       ],
       "refId": "{{ var "stageOrder" }}",
       "requisiteStageRefIds": [
-        "{{ var "previousStage" }}"
+        "{{ var "previousStage" ?: '' }}"
       ],
       "type": "manualJudgment",
       "sendNotifications": {{ var "sendNotifications" ?: false }}
